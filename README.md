@@ -48,4 +48,4 @@ Small changes in smart contract logic can prevent serious security vulnerabiliti
 
 ---
 
-Built for blockchain technologies courseworklogies.*
+*Built for Blockchain Technologies coursework*
