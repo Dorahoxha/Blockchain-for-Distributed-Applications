@@ -1,44 +1,51 @@
 # Smart Contract Security Project
 
-## 📚 Blockchain Technologies  
-## 📅 28/01/2026  
+### Blockchain technologies  
+### 28/01/2026  
 
 ---
 
-## 📌 Overview
-This project demonstrates smart contract security in Solidity by comparing a vulnerable and a secure banking contract, focusing on reentrancy attacks.
+## Overview
+This project compares a vulnerable and a secure smart contract implementation in solidity, focusing on reentrancy attacks and how to prevent them.
 
 ---
 
-## 📂 Contracts
-- **VulnerableBank.sol** – shows reentrancy vulnerability (unsafe external call before state update)  
-- **SecureBankLocal.sol** – secure version using protection patterns  
+## Contracts
+
+- **Vulnerablebank.sol**  
+  Shows a reentrancy vulnerability caused by external calls before state updates  
+
+- **securebanklocal.sol**  
+  Secure version using proper protection patterns and safe execution order  
 
 ---
 
-## ⚙️ Setup (Remix)
+## Setup (Remix IDE)
+
 - Open: https://remix.ethereum.org  
-- Solidity: 0.8.0+  
+- Compiler: solidity 0.8.0+  
 - Compile each file separately  
 
 ---
 
-## 🧪 Testing
-- Deploy on Remix VM (Shanghai)  
-- Test: `deposit()` and `withdraw()`  
-- Compare behavior between both contracts  
+## Testing
+
+- deploy using remix vm (shanghai)  
+- test functions: deposit() and withdraw()  
+- compare behavior between both contracts  
 
 ---
 
-## 🔐 Security Insight
-- VulnerableBank → unsafe external call → reentrancy risk  
-- SecureBankLocal → checks-effects-interactions + protection  
+## Security notes
+
+- Vulnerablebank → unsafe external call → reentrancy risk  
+- Securebanklocal → checks-effects-interactions pattern + protection  
 
 ---
 
-## 🎯 Key Takeaway
-Small changes in execution order can prevent critical smart contract exploits.
+## Key takeaway
+Small changes in smart contract logic can prevent serious security vulnerabilities.
 
 ---
 
-*Built for Blockchain Technologies coursework* Blockchain Technologies.*
+Built for blockchain technologies courseworklogies.*
