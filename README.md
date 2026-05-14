@@ -1,87 +1,44 @@
-# BLOCKCHAIN COURSE PROJECT - SMART CONTRACT IMPLEMENTATION
+# Smart Contract Security Project
 
----
-## 📚 Course
-Blockchain Technologies  
-
-## 📅 Date
-28/01/2026  
+## 📚 Blockchain Technologies  
+## 📅 28/01/2026  
 
 ---
 
-# 📌 PROJECT OVERVIEW
-
-This project demonstrates fundamental smart contract security concepts in Solidity by comparing a vulnerable implementation with a secure implementation of a simple banking system.
-
-The main focus is understanding and preventing **reentrancy attacks**, one of the most critical vulnerabilities in Ethereum smart contracts.
+## 📌 Overview
+This project demonstrates smart contract security in Solidity by comparing a vulnerable and a secure banking contract, focusing on reentrancy attacks.
 
 ---
 
-# 📂 PROJECT STRUCTURE
-
-1. **VulnerableBank.sol**
-   - Demonstrates a reentrancy vulnerability  
-   - Uses unsafe pattern: external call before state update  
-
-2. **SecureBankLocal.sol**
-   - Secure implementation  
-   - Uses reentrancy protection mechanisms  
+## 📂 Contracts
+- **VulnerableBank.sol** – shows reentrancy vulnerability (unsafe external call before state update)  
+- **SecureBankLocal.sol** – secure version using protection patterns  
 
 ---
 
-# ⚙️ COMPILATION INSTRUCTIONS
-
-- Open Remix IDE: https://remix.ethereum.org  
-- Select Solidity Compiler version **0.8.0+**  
-- Compile each `.sol` file separately  
-
----
-
-# 🧪 TESTING INSTRUCTIONS
-
-1. Deploy contracts using **Remix VM (Shanghai)** environment  
-2. Test functions:
-   - `deposit()`
-   - `withdraw()`
-3. Compare behavior between:
-   - VulnerableBank
-   - SecureBankLocal  
+## ⚙️ Setup (Remix)
+- Open: https://remix.ethereum.org  
+- Solidity: 0.8.0+  
+- Compile each file separately  
 
 ---
 
-# 🔐 SECURITY ANALYSIS
-
-## ❌ VulnerableBank
-- Demonstrates **reentrancy vulnerability**
-- Follows unsafe pattern:
-  - External call before state update  
-- Risk: funds can be drained via recursive calls  
+## 🧪 Testing
+- Deploy on Remix VM (Shanghai)  
+- Test: `deposit()` and `withdraw()`  
+- Compare behavior between both contracts  
 
 ---
 
-## ✅ SecureBankLocal
-- Implements secure smart contract design  
-- Uses:
-  - **Checks-Effects-Interactions pattern**
-  - Proper state update before external call  
-- Prevents reentrancy attacks  
+## 🔐 Security Insight
+- VulnerableBank → unsafe external call → reentrancy risk  
+- SecureBankLocal → checks-effects-interactions + protection  
 
 ---
 
-# 🎯 KEY LEARNING OUTCOME
-
-This project highlights how small design decisions in smart contracts can have critical security implications, and how proper coding patterns can prevent real-world exploits.
-
----
-
-# 🧠 SUMMARY
-
-By comparing both contracts, we understand:
-
-- How reentrancy attacks work  
-- Why execution order matters in smart contracts  
-- How to design secure Ethereum applications  
+## 🎯 Key Takeaway
+Small changes in execution order can prevent critical smart contract exploits.
 
 ---
 
-*Built for educational purposes in Blockchain Technologies.*
+*Built for Blockchain Technologies coursework* Blockchain Technologies.*
